@@ -24,10 +24,21 @@ let blockchain = [
 // then, inside the loop, try two different "recipes":
 
 console.log(`=== RECIPE #1 ===`)
+
+let i
+for (i = 0; i < blockchain.length; i++) { console.log(`${blockchain[i].fromUser} transferred ${blockchain[i].amount} to ${blockchain[i].toUser}`)}
+
+
 // Recipe (algorithm) #1: One line of code inside the loop
 // - write each Object in the blockchain to the JavaScript console using a single line of code
+
+
 
 console.log(`=== RECIPE #2 ===`)
 // Recipe (algorithm) #2: Two lines of code inside the loop
 // - create a variable for each "transaction" in the blockchain
 // - write each "transaction" to the JavaScript console
+
+for (i = 0; i < blockchain.length; i++) { 
+  let transaction = blockchain[i]
+  console.log(`${transaction.fromUser} transferred ${transaction.amount} to ${transaction.toUser}`)}
